@@ -29,8 +29,6 @@ os.environ["LANGSMITH_API_KEY"]= os.getenv("LANGSMITH_API_KEY")
 os.environ["LANGSMITH_PROJECT"]="url summarizer"
 
 # proxy
-os.environ["http_proxy"] =os.getenv("HTTP_PROXY")
-os.environ["https_proxy"] = os.getenv("HTTPS_PROXY")
 os.environ["WEBSHARE_PROXY_USERNAME"]= os.getenv("WEBSHARE_PROXY_USERNAME")
 os.environ["WEBSHARE_PROXY_PASSWORD"]= os.getenv("WEBSHARE_PROXY_PASSWORD")
 
