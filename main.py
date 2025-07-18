@@ -113,7 +113,7 @@ if st.button("Summarize the Content from YT or Website"):
                 if "youtube.com" in generic_url or "youtu.be" in generic_url:
                     transcript_text = get_transcript_from_url(generic_url)
                     docs = [Document(page_content=transcript_text, metadata={"source": generic_url})]
-                    st.write(docs)
+                    # st.write(docs)
                 else:
                     loader = UnstructuredURLLoader(
                         urls=[generic_url],
@@ -123,7 +123,7 @@ if st.button("Summarize the Content from YT or Website"):
                         }
                     )
                     docs = loader.load()
-                    st.write(docs)
+                    # st.write(docs)
 
                 chain = load_summarize_chain(
                     llm=st.session_state.llm,
