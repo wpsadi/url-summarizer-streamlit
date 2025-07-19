@@ -91,7 +91,7 @@ st.sidebar.markdown(f"You are using _{st.session_state.selected_model}_ by _Open
 
 # Load LLM if not yet or if model changed
 if "llm" not in st.session_state or st.session_state.llm.model_name != f"openai/{st.session_state.selected_model}":
-    st.session_state.llm = ChatOpenAI(model=f"openai/{st.session_state.selected_model}", temperature=0, streaming=True)
+    st.session_state.llm = ChatOpenAI(model=f"openai/{st.session_state.selected_model}")
 
 # Prompt Input
 generic_url = st.text_input("Enter YouTube or Website URL", label_visibility="collapsed")
