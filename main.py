@@ -84,7 +84,8 @@ if "selected_model" not in st.session_state:
 
 st.session_state.selected_model = st.sidebar.selectbox(
     "Choose a model",
-    ("gpt-4.1", "gpt-4.1-mini", "gpt-4.1-nano", "gpt-4o", "gpt-4o-mini", "o1", "o1-mini", "o1-preview", "o3", "o3-mini", "o4-mini")
+    ("gpt-5", "gpt-5-chat", "gpt-5-mini", "gpt-5-nano", "gpt-4.1", "gpt-4.1-mini", "gpt-4.1-nano", "gpt-4o", "gpt-4o-mini", "o1", "o1-mini", "o1-preview", "o3", "o3-mini", "o4-mini")
+
 )
 st.sidebar.info("If you hit a rate limit, try switching to another model.")
 st.sidebar.markdown(f"You are using _{st.session_state.selected_model}_ by _OpenAI_")
